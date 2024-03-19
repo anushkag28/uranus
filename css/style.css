@@ -1,0 +1,159 @@
+
+/* Styles for the body */
+body {
+    box-sizing: border-box;
+    background-image: url("anu12.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    
+  }
+
+    /* Styles for the buttons */
+    button.btn.btn-dark {
+      border: 4px solid rgb(132, 30, 234);
+      border-radius: 10px;
+      display: inline-block;
+      font-size: 1.5rem;
+      padding: 10px 20px;
+    }
+    
+
+  
+  /* Styles for the containerfirst section */
+  .containerfirst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #dcdbe4;
+    padding-top: 40px;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  
+
+  /* Styles for the mid--section */
+  .midsection {
+    text-align: start;
+    color: rgba(248, 248, 248, 0.9);
+    padding: 40px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+  
+  /* Hover effect for paragraphs in mid--section */
+  .midsection p:hover {
+    font-size: 1.3em;
+    color: #d2d1d1;
+    font-weight: bold;
+  }
+  
+  /* Styles for the carousel */
+  .carousel {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .carousel-item {
+    height: 450px;
+  }
+  
+  .carousel-item img {
+    margin: auto;
+    display: block;
+  }
+  
+  /* Styles for the footer */
+  footer {
+    background-color: #38af8d;
+    color: #131212;
+    padding: 30px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for footer sections */
+  .partners,
+  .resources {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  /* Styles for lists in footer sections */
+  .partners ul,
+  .resources ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .partners ul li,
+  .resources ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for contact information */
+  .contact-info {
+    text-align: center;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  /* Styles for headings */
+  h4 {
+    margin-bottom: 15px;
+  }
+  
+  /* Styles for the video container */
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .containerfirst {
+      font-size: 1.5rem;
+    }
+  
+    button.btn.btn-dark {
+      font-size: 1.2rem;
+      padding: 8px 16px;
+    }
+  
+    .midsection {
+      font-size: 1rem;
+    }
+  
+    .carousel-item {
+      height: 200px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .partners,
+    .resources {
+      margin: 0;
+    }
+  }
